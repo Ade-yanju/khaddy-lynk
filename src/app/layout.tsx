@@ -15,6 +15,7 @@ const serif = Lora({
 export const metadata: Metadata = {
   title: "Safe-Lynk Nursing and Care Agency",
   description: "Healthcare Recruitment. Reliable People. The Right Fit.",
+  icons: { icon: "/icon.jpeg" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -1,0 +1,2 @@
+import ApplicationForm from "@/components/application-form";
+export default function Apply(){return <><section className="section bg-[#e4efed]"><div className="container max-w-4xl"><p className="eyebrow">Register with Safe-Lynk</p><h1 className="display mt-4 text-5xl">Online Application Form</h1><p className="mt-5 text-lg text-[#31585d]">Please complete the form below. We will contact you if your experience matches our current opportunities.</p></div></section><section className="section"><div className="container max-w-4xl"><ApplicationForm /></div></section></>}

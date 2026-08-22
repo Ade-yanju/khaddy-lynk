@@ -1,26 +1,14 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@theme inline { --font-sans: var(--font-sans); --font-serif: var(--font-serif); }
+* { box-sizing: border-box; } html { scroll-behavior: smooth; }
+body { margin: 0; background: #f8f6f0; color: #163a43; font-family: var(--font-sans), sans-serif; font-size: 16px; line-height: 1.6; }
+main small { display:block; margin-top:.25rem; color:#8f2f22; font-weight:700; }
+main { min-height: 70vh; } .display { font-family: var(--font-serif), serif; }
+.eyebrow { letter-spacing: .13em; text-transform: uppercase; font-size: .72rem; font-weight: 700; color: #d2664d; }
+.section { padding: 5.5rem 1.5rem; } .container { max-width: 76rem; margin: 0 auto; }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:.5rem; border-radius:9999px; padding:.8rem 1.25rem; font-weight:700; font-size:.95rem; line-height:1.25; transition:.2s; }
+.btn-primary { background:#d2664d; color:white; } .btn-primary:hover { background:#b8533e; } .btn-secondary { border:1px solid #1d5661; color:#1d5661; } .btn-secondary:hover { background:#e4efed; }
+.card { background:white; border:1px solid #bfd0cc; border-radius:1rem; box-shadow:0 8px 26px rgba(18,63,73,.06); }.field { width:100%; border:2px solid #71938d; border-radius:.5rem; background:white; padding:.72rem .8rem; color:#163a43; }.field:focus { outline:3px solid #d2664d; outline-offset:2px; }.label { display:block; margin-bottom:.38rem; font-size:.92rem; font-weight:700; color:#163a43; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline:3px solid #d2664d; outline-offset:3px; }
+@media (max-width: 700px) { .section { padding:3.75rem 1.25rem; } }
